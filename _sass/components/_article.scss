@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Article
+   ========================================================================== */
+
+.c-article {
+  height: 100%;
+}
+
+.c-article__main {
+  max-width: 116rem; // 760px;
+  min-height: 56rem;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  @include fs--body;
+  color: $c__grey;
+
+  > * {
+    margin-bottom: 1.8rem;
+    color: $c__grey;
+  }
+
+  a:not(.c-btn) {
+    text-decoration: underline;
+  }
+
+  blockquote {
+    margin-left: -2.5rem;
+    width: calc(100% + 5rem);
+    padding: 2.5rem;
+    background: $c__light-grey;
+  }
+}
+
+.c-article__content {
+  max-width: 86rem;
+  min-height: 20rem;
+  height: 100%;
+  float: left;
+  padding-bottom: 7.5rem;
+  @include fs--body;
+  position: relative;
+}

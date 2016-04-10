@@ -1,0 +1,21 @@
+# Site settings
+title: Deerstalker Documentation
+email: hello@deerstalker.io
+description: >
+  Site for general architecture and documentation about deerstalker
+baseurl: ""
+url: "http://deerstalker.io"
+fixedNav: 'true'
+theme: purple # green, blue, orange, purple, grey
+twitterUsername: deerstalkerio
+githubUsername: deerstalkerio
+dribbbleUsername:
+codepenUsername:
+
+# Build settings
+permalink: /blog/:year/:month/:title
+markdown: kramdown
+include: [_pages, _docs, images]
+exclude: [_site, CHANGELOG.md, LICENSE, README.md]
+sass:
+  style: compressed

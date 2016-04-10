@@ -1,0 +1,32 @@
+---
+layout: docs
+title: Documentation | Design
+permalink: /docs/design/
+---
+
+<h2>Architecture</h2>
+<p>This document outlines the high level system architecture for Deerstalker.io. This document outlines the internal components for how Deerstalker which allow you to monitor your applications.</p>
+
+<h3>System Context</h3>
+
+<img src="/images/architecture/system-context.png"/>
+
+<h3>Block Diagram</h3>
+<p>This section defines how deerstalker ecosystem breaks up into individual components.</p>
+
+<img src="/images/architecture/block-diagram.png"/>
+
+<h3>Deerstalker API</h3>
+<p>The Deerstalker API exposes endpoints within which allow the deerstalker site, to present the application metrics.</p>
+
+<h4>Identity</h4>
+<p>This provides very basic user management, providing authentication for the presentation layer as well as the API. You can manage these users through the <code>deerstalker</code> command line client or using the admin panel.</p>
+
+<h4>Metrics</h4>
+<p>These generically represent all the metrics which have been submitted by your applications.</p>
+
+<h4>Plugins</h4>
+<p></p>
+
+<h3>Deerstalker Ingest</h3>
+<p>The Deerstalker Ingest allows for data to be pushed at any frequency and thus then pushed into the backend engesr flow.</p>
